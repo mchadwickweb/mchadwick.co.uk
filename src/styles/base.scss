@@ -46,6 +46,14 @@ h1 {}
 p {
   margin: 1rem 0 1.5rem 0;
   color: $fontColour--secondary;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 a {
@@ -79,6 +87,36 @@ code {
   border-left: 1px solid $brandColour--secondary;
 }
 
+// Forms ----------------------------------------------------------
+// ----------------------------------------------------------------
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight--small;
+  border: 1px solid $greyScale2;
+  
+  &:focus {
+    outline: 3px solid $brandColour--secondary;
+  }
+}
+
+label {
+
+  span {
+    display: block;
+    font-size: $baseFontSize--small;
+    text-transform: uppercase;
+    color: $brandColour--secondary;
+  }
+}
+
+// Buttons --------------------------------------------------------
+// ----------------------------------------------------------------
+button,
+input[type='submit'],
 .button {
   display: inline-block;
   padding: 0.8rem 1.4rem;
@@ -87,9 +125,11 @@ code {
   text-align: center;
   border-radius: 3rem;
   background-color: $brandColour--secondary;
+  font-size: $baseFontSize;
   color: white;
   font-weight: $fontWeight--bold;
   text-decoration: none;
+  border: none;
   transition: background-color $transition-time--short;
 
   &:hover,
