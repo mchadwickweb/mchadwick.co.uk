@@ -2,6 +2,11 @@
 
 .navigation {
   text-align: right;
+
+  @include bp($medium-bp) {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .navigation__item {
