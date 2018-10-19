@@ -1,0 +1,8 @@
+// Breakpoint definition.
+@mixin bp($breakpoint) {
+  @media (min-width: $breakpoint ) { @content }
+}
+
+@mixin bp-max($breakpoint) {
+  @media (max-width: $breakpoint - 0.001 ) { @content }
+}

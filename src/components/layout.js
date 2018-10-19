@@ -1,10 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from './header'
-import './layout.css'
+// Components
+import Aside from './aside/aside';
+import Navigation from './navigation/navigation';
+// Styles
+import '../styles/base.scss';
+import './layout.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,16 +32,14 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
+        <div className="site">
+          <Aside />
+          <main className="site__content">
+            <Navigation />
+            <div className="content">
+              {children}
+            </div>
+          </main>
         </div>
       </>
     )}

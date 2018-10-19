@@ -1,0 +1,43 @@
+// Base typography ---------------------------------
+// -------------------------------------------------
+$baseFontFamily: 'Circular Std', Arial, sans-serif;
+
+$baseFontSize: 18px;
+$baseFontSize--small: 16px;
+
+$baseLineHeight: 1.8;
+$baseLineHeight--small: 1.2;
+
+$fontWeight--normal: normal;
+$fontWeight--bold: bold;
+
+$codeFontFamily: Menlo, Monaco, 'Courier New', monospace;
+
+// Headings ----------------------------------------
+// -------------------------------------------------
+$headingLevel1: 2.1rem;
+$headingLevel2: 1.8rem;
+$headingLevel3: 1.6rem;
+$headingLevel4: 1.4rem;
+
+// Colours -----------------------------------------
+// -------------------------------------------------
+$brandColour--primary: #000000;
+$brandColour--secondary: #4cd5d8;
+
+$brandColour--secondary-focused: #2baeb1;
+
+$fontColour--primary: #000000;
+$fontColour--secondary: #3E3E3E;
+
+$greyScale1: #f9f9f9;
+
+// Breakpoints -------------------------------------
+// -------------------------------------------------
+$xlarge-bp: 1200px;
+$large-bp: 1024px;
+$medium-bp: 768px;
+$small-bp: 420px;
+$xsmall-bp: 320px;
+
+$transition-time--short: 0.2s;

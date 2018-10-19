@@ -1,0 +1,48 @@
+@import '../../styles/_sass-config';
+
+.navigation {
+  text-align: right;
+}
+
+.navigation__item {
+  position: relative;
+  margin-left: 2.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: $fontColour--primary;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 3px;
+    background-color: $fontColour--primary;
+    transition: background-color $transition-time--short;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brandColour--secondary;
+
+    &:before {
+      background-color: $brandColour--secondary;
+    }
+  }
+
+  @include bp($medium-bp) {
+    margin-left: 5rem;
+  }
+}
+
+.navigation__item--active {
+  color: $brandColour--secondary;
+
+  &:before {
+    background-color: $brandColour--secondary;
+  }
+}

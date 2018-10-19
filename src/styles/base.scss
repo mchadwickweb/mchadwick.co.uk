@@ -1,0 +1,101 @@
+@import '_sass-config.scss';
+@import '_fonts.scss';
+html {
+  font-family: $baseFontFamily;
+  box-sizing: border-box;
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: inherit;
+
+    &:before,
+    &:after {
+      box-sizing: inherit;
+    }
+  }
+}
+
+html,
+body {
+  font-size: $baseFontSize--small;
+  font-weight: $fontWeight--normal;
+  line-height: $baseLineHeight;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+  @include bp($medium-bp) {
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 1.2rem 0;
+  font-weight: $fontWeight--bold;
+  line-height: $baseLineHeight--small;
+}
+
+h1 { font-size: $headingLevel1; }
+h1 {}
+h1 {}
+h1 {}
+
+p {
+  margin: 1rem 0 1.5rem 0;
+  color: $fontColour--secondary;
+}
+
+a {
+  color: $brandColour--secondary;
+  transition: color $transition-time--short;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brandColour--secondary-focused;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1rem 0 1.5rem 1rem;
+  padding: 1rem;
+  font-size: 85%;
+  font-style: italic;
+  border-left: 2px solid $brandColour--secondary;
+  background-color: $greyScale1;
+}
+
+code {
+  font-family: $codeFontFamily;
+  margin: 1rem 0 1.5rem 0;
+  padding: 1rem;
+  border-left: 1px solid $brandColour--secondary;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  border-radius: 3rem;
+  background-color: $brandColour--secondary;
+  color: white;
+  font-weight: $fontWeight--bold;
+  text-decoration: none;
+  transition: background-color $transition-time--short;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $brandColour--secondary-focused;
+    color: white;
+  }
+}
