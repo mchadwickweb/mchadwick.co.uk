@@ -10,14 +10,12 @@
 
   @include bp($medium-bp) {
     background-image: url('./branding-background--large.jpg');
-
-    position: relative; /* I am the fallback */
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
-    width: 25%;
-    max-width: 500px;
-    min-height: 100vh;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100vh;
     background-color: #eee;
   }
 }

@@ -97,7 +97,7 @@ textarea {
   font-size: $baseFontSize;
   line-height: $baseLineHeight--small;
   border: 1px solid $greyScale2;
-  
+
   &:focus {
     outline: 3px solid $brandColour--secondary;
   }
@@ -111,6 +111,10 @@ label {
     text-transform: uppercase;
     color: $brandColour--secondary;
   }
+}
+
+.form-item--hidden {
+  display: none;
 }
 
 // Buttons --------------------------------------------------------
@@ -130,6 +134,7 @@ input[type='submit'],
   font-weight: $fontWeight--bold;
   text-decoration: none;
   border: none;
+  cursor: pointer;
   transition: background-color $transition-time--short;
 
   &:hover,
