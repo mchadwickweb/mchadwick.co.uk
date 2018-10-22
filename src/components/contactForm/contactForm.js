@@ -1,14 +1,7 @@
 import React from 'react';
 
 const ContactForm = () => (
-
-  <form name="contact" method="POST" action="/contact/success" data-netlify="true" netlify-honeypot="bot-field">
-    <p className="form-item--hidden">
-      <label>
-        <span>Don’t fill this out if you're human</span>
-        <input name="bot-field" />
-      </label>
-    </p>
+  <form name="contact" method="POST" action="/pages/success" dataNetlify="true">
     <p className="form-item">
       <label className="form-item__label">
         <span>Your Name</span>
