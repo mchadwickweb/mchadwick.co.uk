@@ -9,6 +9,8 @@ import Navigation from './navigation/navigation';
 // Styles
 import '../styles/base.scss';
 import './layout.scss';
+// Assets
+import favicon from '../favicon.ico';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,9 +31,11 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+          ]}
         >
           <html lang="en" />
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         </Helmet>
         <div className="site">
           <Aside />
