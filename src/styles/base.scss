@@ -33,15 +33,15 @@ body {
 }
 
 h1, h2, h3, h4 {
-  margin: 0 0 1.2rem 0;
+  margin: 0 0 1.8rem 0;
   font-weight: $fontWeight--bold;
   line-height: $baseLineHeight--small;
 }
 
 h1 { font-size: $headingLevel1; }
-h1 {}
-h1 {}
-h1 {}
+h2 { font-size: $headingLevel2; }
+h3 { font-size: $headingLevel3; }
+h4 { font-size: $headingLevel4; }
 
 p {
   margin: 1rem 0 1.5rem 0;
@@ -58,7 +58,6 @@ p {
 
 a {
   color: $brandColour--secondary;
-  transition: color $transition-time--short;
 
   &:hover,
   &:focus,
@@ -135,12 +134,15 @@ input[type='submit'],
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: background-color $transition-time--short;
 
   &:hover,
   &:focus,
   &:active {
     background-color: $brandColour--secondary-focused;
     color: white;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
