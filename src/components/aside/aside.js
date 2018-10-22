@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import './aside.scss';
-
 const Aside = () => (
   <aside className="site__branding">
     <Link to="/">

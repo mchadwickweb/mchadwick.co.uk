@@ -8,7 +8,6 @@ import Aside from './aside/aside';
 import Navigation from './navigation/navigation';
 // Styles
 import '../styles/base.scss';
-import './layout.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery

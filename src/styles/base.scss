@@ -1,5 +1,6 @@
 @import '_sass-config.scss';
 @import '_fonts.scss';
+
 html {
   font-family: $baseFontFamily;
   box-sizing: border-box;
@@ -146,3 +147,8 @@ input[type='submit'],
     outline: none;
   }
 }
+
+@import 'layout.scss';
+@import 'components/header.scss';
+@import 'components/navigation.scss';
+@import 'components/aside.scss';
