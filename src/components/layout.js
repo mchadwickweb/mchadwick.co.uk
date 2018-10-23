@@ -12,6 +12,8 @@ import './layout.scss';
 // Assets
 import favicon from '../favicon.ico';
 
+import '../fonts/fonts.css';
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

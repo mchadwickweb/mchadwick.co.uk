@@ -5,15 +5,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
-    'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        custom: {
-          families: ['Circular Std', 'Arial', 'sans-serif'],
-          urls: ['./fonts/fonts.css']
-        }
-      }
-    }
+    'gatsby-plugin-sass'
   ],
 }
