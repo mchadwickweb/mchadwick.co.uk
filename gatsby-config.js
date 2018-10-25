@@ -13,6 +13,13 @@ module.exports = {
         output: '/sitemap.xml',
         exclude: ['/success'],
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-47804419-2",
+        head: false,
+      },
+    },
   ],
 }
